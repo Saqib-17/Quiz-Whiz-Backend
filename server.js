@@ -21,7 +21,7 @@ app.use("/api/questions", questionRoutes);
 app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
-  res.send("API is running...");
+  res.send("Welcome to Server of Quiz-Whiz");
 });
 
 app.listen(port, () => {
