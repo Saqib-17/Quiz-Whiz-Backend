@@ -14,7 +14,7 @@ The **QuizWhiz Backend** is a RESTful API built with Node.js and Express.js, pro
 
 ## Features
 
-- User authentication with JWT (JSON Web Tokens)  
+- User authentication
 - CRUD operations for quizzes, questions, and user data  
 - MongoDB database integration via Mongoose  
 - Secure password hashing and validation  
@@ -27,7 +27,6 @@ The **QuizWhiz Backend** is a RESTful API built with Node.js and Express.js, pro
 - Node.js  
 - Express.js  
 - MongoDB & Mongoose  
-- JWT for authentication  
 - bcrypt for password hashing  
 
 ---
