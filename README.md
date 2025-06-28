@@ -42,26 +42,32 @@ The **QuizWhiz Backend** is a RESTful API built with Node.js and Express.js, pro
 
 ### Installation
 
-1. Clone the repository or navigate to the backend folder if part of a monorepo:
+Clone the repository or navigate to the backend folder if part of a monorepo:
 
-git clone https://github.com/Saqib-17/QuizWhiz.git
+git clone https://github.com/Saqib-17/QuizWhiz.git  
 cd QuizWhiz/server
+
 Install dependencies:
 
 npm install
-Create a .env file in the server folder with the following environment variables:
 
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-PORT=5000
+Create a `.env` file in the `server` folder with the following environment variables:
 
 Start the development server:
+
 npm run dev
-(Make sure you have nodemon installed globally or as a dev dependency for npm run dev to work.)
 
+*(Make sure you have `nodemon` installed globally or as a dev dependency for `npm run dev` to work.)*
 
-Contribution
+---
+
+## Contribution
+
 Feel free to fork the repo, create branches, and submit pull requests!
 
-Contact
-Md. Shahidul Islam Sakib — Email | GitHub
+---
+
+## Contact
+
+Md. Shahidul Islam Sakib — Email: shahidul.sakib17@gmail.com | GitHub: https://github.com/Saqib-17
+
