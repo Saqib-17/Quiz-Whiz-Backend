@@ -15,10 +15,11 @@ const port = process.env.PORT || 4000;
 // CORS Configuration: allow requests from both web and mobile clients
 app.use(cors({
   origin: [
-    'https://donation-bd-backend.vercel.app', // Live API URL
-    'https://quiz-whiz-frontend.vercel.app/', // Replace this with your actual website URL
+    'https://donation-bd-backend.vercel.app', 
+    'https://quiz-whiz-frontend.vercel.app', // Corrected frontend URL without trailing slash
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'], 
 }));
 
 // Middleware
