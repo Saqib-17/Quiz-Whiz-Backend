@@ -13,8 +13,6 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // CORS Configuration: allow requests from both web and mobile clients
-const cors = require('cors');
-
 app.use(cors({
   origin: [
     'https://donation-bd-backend.vercel.app', // Live API URL
