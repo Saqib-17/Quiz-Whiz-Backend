@@ -13,14 +13,14 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 // CORS Configuration: allow requests from both web and mobile clients
+const cors = require('cors');
+
 app.use(cors({
   origin: [
-    'http://localhost:3000', // React Web development URL (for website)
-    'http://localhost:8081', // React Native development URL (for emulator or device)
-    'https://your-deployed-web-url.com', // Production web URL (for website)
+    'https://donation-bd-backend.vercel.app', // Live API URL
+    'https://quiz-whiz-frontend.vercel.app/', // Replace this with your actual website URL
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 // Middleware
