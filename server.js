@@ -12,15 +12,16 @@ connectDB();
 const app = express();
 const port = process.env.PORT || 4000;
 
-// CORS Configuration: allow requests from both web and mobile clients
 app.use(cors({
   origin: [
-    'https://donation-bd-backend.vercel.app', 
-    'https://quiz-whiz-frontend.vercel.app', // Corrected frontend URL without trailing slash
+    'https://quiz-whiz-frontend.vercel.app',
+    'http://localhost:3000',  // web local
+    'http://localhost:8081',  // expo mobile
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'], 
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+
 
 // Middleware
 app.use(express.json());
