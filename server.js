@@ -18,6 +18,7 @@ app.use(cors({
   origin: [
     'https://quiz-whiz-frontend.vercel.app', // deployed frontend
     'http://localhost:3000',                 // local web dev
+     'http://localhost:5173',   
     'http://localhost:8081',                 // Expo mobile dev
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
