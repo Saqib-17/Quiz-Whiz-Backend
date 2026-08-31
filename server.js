@@ -7,24 +7,22 @@ import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
-const app = express();
-
 // Connect to MongoDB
 connectDB();
 
+const app = express();
+
 // CORS setup
-app.use(
-  cors({
-    origin: [
-      'https://quiz-whiz-frontend.vercel.app',
-      'http://localhost:3000',
-      'http://localhost:5173',
-      'http://localhost:8081',
-    ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-  })
-);
+app.use(cors({
+origin: [
+'https://quiz-whiz-frontend.vercel.app',
+'http://localhost:3000',
+'http://localhost:5173',
+'http://localhost:8081',
+],
+methods: ['GET', 'POST', 'PUT', 'DELETE'],
+allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
 // Middleware
 app.use(express.json());
@@ -35,8 +33,8 @@ app.use('/api/users', userRoutes);
 
 // Root route for testing
 app.get('/', (req, res) => {
-  res.send('Welcome to Server of Quiz-Whiz');
+res.send('Welcome to Server of Quiz-Whiz');
 });
 
-// Export the Express app for Vercel
+// Export app for Vercel Serverless Function
 export default app;
