@@ -7,37 +7,36 @@ import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
-// ✅ Connect to MongoDB
+const app = express();
+
+// Connect to MongoDB
 connectDB();
 
-const app = express();
-const port = process.env.PORT || 4000;
+// CORS setup
+app.use(
+  cors({
+    origin: [
+      'https://quiz-whiz-frontend.vercel.app',
+      'http://localhost:3000',
+      'http://localhost:5173',
+      'http://localhost:8081',
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+  })
+);
 
-// ✅ CORS setup (allow frontend + local dev)
-app.use(cors({
-  origin: [
-    'https://quiz-whiz-frontend.vercel.app', // deployed frontend
-    'http://localhost:3000',                 // local web dev
-     'http://localhost:5173',   
-    'http://localhost:8081',                 // Expo mobile dev
-  ],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-}));
-
-// ✅ Middleware
+// Middleware
 app.use(express.json());
 
-// ✅ Routes
+// Routes
 app.use('/api/questions', questionRoutes);
 app.use('/api/users', userRoutes);
 
-// ✅ Root route for testing
+// Root route for testing
 app.get('/', (req, res) => {
   res.send('Welcome to Server of Quiz-Whiz');
 });
 
-// ✅ Start server
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-});
+// Export the Express app for Vercel
+export default app;
