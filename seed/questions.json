@@ -1,32 +1,290 @@
 [
+  {
+    "subject": "chemistry",
+    "setName": "Set 1",
+    "questions": [
+      {
+        "title": "What is the atomic number of oxygen?",
+        "options": [
+          { "text": "6", "isCorrect": false },
+          { "text": "8", "isCorrect": true },
+          { "text": "10", "isCorrect": false },
+          { "text": "16", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "What is the chemical formula for table salt?",
+        "options": [
+          { "text": "KCl", "isCorrect": false },
+          { "text": "NaCl", "isCorrect": true },
+          { "text": "CaCO3", "isCorrect": false },
+          { "text": "NaOH", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "Which element has the symbol K?",
+        "options": [
+          { "text": "Krypton", "isCorrect": false },
+          { "text": "Calcium", "isCorrect": false },
+          { "text": "Potassium", "isCorrect": true },
+          { "text": "Cobalt", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "Which gas do plants absorb from the atmosphere during photosynthesis?",
+        "options": [
+          { "text": "Oxygen", "isCorrect": false },
+          { "text": "Nitrogen", "isCorrect": false },
+          { "text": "Carbon dioxide", "isCorrect": true },
+          { "text": "Hydrogen", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "What type of bond forms when electrons are transferred between atoms?",
+        "options": [
+          { "text": "Covalent bond", "isCorrect": false },
+          { "text": "Ionic bond", "isCorrect": true },
+          { "text": "Metallic bond", "isCorrect": false },
+          { "text": "Hydrogen bond", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "At 25 °C, what is the approximate pH of a neutral solution?",
+        "options": [
+          { "text": "0", "isCorrect": false },
+          { "text": "5", "isCorrect": false },
+          { "text": "7", "isCorrect": true },
+          { "text": "14", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "Which subatomic particle has a negative electric charge?",
+        "options": [
+          { "text": "Proton", "isCorrect": false },
+          { "text": "Neutron", "isCorrect": false },
+          { "text": "Electron", "isCorrect": true },
+          { "text": "Nucleus", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "At what temperature does pure water boil at standard atmospheric pressure?",
+        "options": [
+          { "text": "0 °C", "isCorrect": false },
+          { "text": "50 °C", "isCorrect": false },
+          { "text": "100 °C", "isCorrect": true },
+          { "text": "150 °C", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "Which periodic-table group contains the noble gases?",
+        "options": [
+          { "text": "Group 1", "isCorrect": false },
+          { "text": "Group 2", "isCorrect": false },
+          { "text": "Group 17", "isCorrect": false },
+          { "text": "Group 18", "isCorrect": true }
+        ]
+      },
+      {
+        "title": "What is the chemical formula for methane?",
+        "options": [
+          { "text": "CH4", "isCorrect": true },
+          { "text": "CO2", "isCorrect": false },
+          { "text": "C2H6", "isCorrect": false },
+          { "text": "NH3", "isCorrect": false }
+        ]
+      }
+    ]
+  },
+  {
+  "subject": "physics",
+  "setName": "Set 1",
+  "questions": [
     {
-      "subject": "physics",
-      "title": "What is the speed of light?",
+      "title": "Which of the following is the SI unit of work?",
       "options": [
-        { "text": "3 × 10^8 m/s", "isCorrect": true },
-        { "text": "3 × 10^6 m/s", "isCorrect": false },
-        { "text": "3 × 10^7 m/s", "isCorrect": false }
+        { "text": "Newton", "isCorrect": false },
+        { "text": "Joule", "isCorrect": true },
+        { "text": "Watt", "isCorrect": false },
+        { "text": "Pascal", "isCorrect": false }
       ]
     },
     {
-      "subject": "chemistry",
-      "title": "What is the pH level of water?",
+      "title": "What is the tendency of an object to resist a change in its state of motion called?",
       "options": [
-        { "text": "7", "isCorrect": true },
-        { "text": "5", "isCorrect": false },
-        { "text": "9", "isCorrect": false }
+        { "text": "Momentum", "isCorrect": false },
+        { "text": "Inertia", "isCorrect": true },
+        { "text": "Friction", "isCorrect": false },
+        { "text": "Acceleration", "isCorrect": false }
       ]
     },
     {
-      "subject": "chemistry",
-      "title": "What is the atomic number of Hydrogen?",
+      "title": "Which force opposes the motion of an object moving across a surface?",
       "options": [
-        { "text": "1", "isCorrect": true },
-        { "text": "5", "isCorrect": false },
-        { "text": "9", "isCorrect": false }
+        { "text": "Gravity", "isCorrect": false },
+        { "text": "Magnetic force", "isCorrect": false },
+        { "text": "Friction", "isCorrect": true },
+        { "text": "Buoyant force", "isCorrect": false }
+      ]
+    },
+    {
+      "title": "What is the unit of frequency?",
+      "options": [
+        { "text": "Hertz", "isCorrect": true },
+        { "text": "Newton", "isCorrect": false },
+        { "text": "Joule", "isCorrect": false },
+        { "text": "Tesla", "isCorrect": false }
+      ]
+    },
+    {
+      "title": "Which mirror is commonly used as a rear-view mirror in vehicles?",
+      "options": [
+        { "text": "Plane mirror", "isCorrect": false },
+        { "text": "Concave mirror", "isCorrect": false },
+        { "text": "Convex mirror", "isCorrect": true },
+        { "text": "Parabolic mirror", "isCorrect": false }
+      ]
+    },
+    {
+      "title": "What is the rate of change of displacement with respect to time?",
+      "options": [
+        { "text": "Acceleration", "isCorrect": false },
+        { "text": "Velocity", "isCorrect": true },
+        { "text": "Force", "isCorrect": false },
+        { "text": "Momentum", "isCorrect": false }
+      ]
+    },
+    {
+      "title": "Which material is generally a good conductor of electricity?",
+      "options": [
+        { "text": "Rubber", "isCorrect": false },
+        { "text": "Glass", "isCorrect": false },
+        { "text": "Copper", "isCorrect": true },
+        { "text": "Plastic", "isCorrect": false }
+      ]
+    },
+    {
+      "title": "What happens to the pressure of a gas when its volume decreases at constant temperature?",
+      "options": [
+        { "text": "It decreases", "isCorrect": false },
+        { "text": "It increases", "isCorrect": true },
+        { "text": "It becomes zero", "isCorrect": false },
+        { "text": "It remains unchanged", "isCorrect": false }
+      ]
+    },
+    {
+      "title": "Which form of energy does a moving object possess?",
+      "options": [
+        { "text": "Potential energy", "isCorrect": false },
+        { "text": "Kinetic energy", "isCorrect": true },
+        { "text": "Chemical energy", "isCorrect": false },
+        { "text": "Nuclear energy", "isCorrect": false }
+      ]
+    },
+    {
+      "title": "Which instrument is used to measure temperature?",
+      "options": [
+        { "text": "Barometer", "isCorrect": false },
+        { "text": "Ammeter", "isCorrect": false },
+        { "text": "Thermometer", "isCorrect": true },
+        { "text": "Voltmeter", "isCorrect": false }
       ]
     }
-
-    
   ]
-  
+},
+  {
+    "subject": "chemistry",
+    "setName": "Set 2",
+    "questions": [
+      {
+        "title": "What is the most abundant gas in Earth's atmosphere?",
+        "options": [
+          { "text": "Oxygen", "isCorrect": false },
+          { "text": "Nitrogen", "isCorrect": true },
+          { "text": "Carbon dioxide", "isCorrect": false },
+          { "text": "Argon", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "How many protons does a carbon atom have?",
+        "options": [
+          { "text": "4", "isCorrect": false },
+          { "text": "6", "isCorrect": true },
+          { "text": "8", "isCorrect": false },
+          { "text": "12", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "Which formula represents sulfuric acid?",
+        "options": [
+          { "text": "HCl", "isCorrect": false },
+          { "text": "HNO3", "isCorrect": false },
+          { "text": "H2SO4", "isCorrect": true },
+          { "text": "CH3COOH", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "What is the charge of a neutron?",
+        "options": [
+          { "text": "Positive", "isCorrect": false },
+          { "text": "Negative", "isCorrect": false },
+          { "text": "Neutral", "isCorrect": true },
+          { "text": "It changes with the atom", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "Which state of matter has a fixed volume but no fixed shape?",
+        "options": [
+          { "text": "Solid", "isCorrect": false },
+          { "text": "Liquid", "isCorrect": true },
+          { "text": "Gas", "isCorrect": false },
+          { "text": "Plasma", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "What is the name for a substance made of only one type of atom?",
+        "options": [
+          { "text": "Compound", "isCorrect": false },
+          { "text": "Mixture", "isCorrect": false },
+          { "text": "Element", "isCorrect": true },
+          { "text": "Solution", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "Which element is a liquid at room temperature?",
+        "options": [
+          { "text": "Iron", "isCorrect": false },
+          { "text": "Mercury", "isCorrect": true },
+          { "text": "Aluminum", "isCorrect": false },
+          { "text": "Copper", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "What is the smallest unit of an element that retains its chemical properties?",
+        "options": [
+          { "text": "Molecule", "isCorrect": false },
+          { "text": "Atom", "isCorrect": true },
+          { "text": "Cell", "isCorrect": false },
+          { "text": "Compound", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "What is the chemical formula for ammonia?",
+        "options": [
+          { "text": "NH3", "isCorrect": true },
+          { "text": "NO2", "isCorrect": false },
+          { "text": "N2O", "isCorrect": false },
+          { "text": "CH4", "isCorrect": false }
+        ]
+      },
+      {
+        "title": "What is the name of the change from a solid directly to a gas?",
+        "options": [
+          { "text": "Condensation", "isCorrect": false },
+          { "text": "Freezing", "isCorrect": false },
+          { "text": "Sublimation", "isCorrect": true },
+          { "text": "Melting", "isCorrect": false }
+        ]
+      }
+    ]
+  }
+]

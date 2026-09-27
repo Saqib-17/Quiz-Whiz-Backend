@@ -15,19 +15,48 @@ The **QuizWhiz Backend** is a RESTful API built with Node.js and Express.js, pro
 ## Features
 
 - User authentication
-- CRUD operations for quizzes, questions, and user data  
-- MongoDB database integration via Mongoose  
-- Secure password hashing and validation  
+- CRUD operations for quizzes, questions, and user data
+- MongoDB database integration via Mongoose
+- Secure password hashing and validation
 - REST API endpoints with proper error handling
+
+## Question Sets
+
+Questions are stored as named sets within a subject. Each set contains a `questions` array, and each question contains a `title` and an `options` array.
+
+Create a set with `POST /api/questions`:
+
+```json
+{
+  "subject": "physics",
+  "setName": "Set 1",
+  "questions": [
+    {
+      "title": "What is the speed of light?",
+      "options": [
+        { "text": "3 × 10^8 m/s", "isCorrect": true },
+        { "text": "3 × 10^6 m/s", "isCorrect": false }
+      ]
+    }
+  ]
+}
+```
+
+- `GET /api/questions/:subject` returns all sets for a subject.
+- `GET /api/questions/:subject/:setName` returns one named set. URL-encode names containing spaces.
+- A subject cannot have two sets with the same `setName`.
+- Run `npm run seed:questions` to upsert the sets in `seed/questions.json`.
+
+Existing database records stored as individual questions are left untouched and are not included in set responses. Convert them into the new set format before relying on those records.
 
 ---
 
 ## Tech Stack
 
-- Node.js  
-- Express.js  
-- MongoDB & Mongoose  
-- bcrypt for password hashing  
+- Node.js
+- Express.js
+- MongoDB & Mongoose
+- bcrypt for password hashing
 
 ---
 
@@ -35,8 +64,8 @@ The **QuizWhiz Backend** is a RESTful API built with Node.js and Express.js, pro
 
 ### Prerequisites
 
-- Node.js (v14 or above)  
-- npm or yarn  
+- Node.js (v14 or above)
+- npm or yarn
 - MongoDB (local or cloud)
 
 ### Installation
@@ -56,7 +85,7 @@ Start the development server:
 
 npm run dev
 
-*(Make sure you have `nodemon` installed globally or as a dev dependency for `npm run dev` to work.)*
+_(Make sure you have `nodemon` installed globally or as a dev dependency for `npm run dev` to work.)_
 
 ---
 
@@ -68,5 +97,4 @@ Feel free to fork the repo, create branches, and submit pull requests!
 
 ## Contact
 
-Md. Shahidul Islam Sakib — Email: shahidul.sakib17@gmail.com | GitHub: https://github.com/Saqib-17 
-
+Md. Shahidul Islam Sakib — Email: shahidul.sakib17@gmail.com | GitHub: https://github.com/Saqib-17
